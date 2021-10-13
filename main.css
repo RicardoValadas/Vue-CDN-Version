@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#main {
+  width: auto;
+  margin: 30px 20px;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+#main h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+#main label {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.animate__animated.animate__bounceInDown {
+  --animate-duration: 2s;
+}
+/*# sourceMappingURL=main.css.map */
