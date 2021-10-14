@@ -5,11 +5,16 @@
           box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: green;
+}
+
 #main {
   width: auto;
   margin: 30px 20px;
   padding: 10px;
-  border: 2px solid black;
 }
 
 #main h1 {
@@ -22,7 +27,59 @@
   margin-bottom: 15px;
 }
 
+#main #content {
+  margin-top: 30px;
+  width: auto;
+  padding: 5px;
+}
+
+#main #content #imgs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#main #content #imgs img {
+  margin: auto;
+  width: 280px;
+  height: 250px;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#main #content #imgs img:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+#main #content h2 {
+  text-align: center;
+}
+
 .animate__animated.animate__bounceInDown {
   --animate-duration: 2s;
+}
+
+@media screen and (min-width: 650px) {
+  #main h1 {
+    font-size: 25px;
+  }
+  #main #content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
